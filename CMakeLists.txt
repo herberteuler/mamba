@@ -67,9 +67,9 @@ if(BUILD_MAMBA)
 endif()
 
 # micromamba requires static linkage
-if(BUILD_MICROMAMBA)
-    set(BUILD_STATIC ON)
-endif()
+#if(BUILD_MICROMAMBA)
+#    set(BUILD_STATIC ON)
+#endif()
 
 # libmamba library and tests
 if(BUILD_LIBMAMBA)
