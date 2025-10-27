@@ -123,10 +123,7 @@ if(BUILD_SHARED AND UNIX)
         "${CMAKE_CURRENT_BINARY_DIR}/etc/profile.d/mamba.sh"
     )
 
-    install(
-        FILES ${CMAKE_CURRENT_BINARY_DIR}/etc/profile.d/mamba.sh
-        DESTINATION ${CMAKE_INSTALL_PREFIX}/etc/profile.d/
-    )
+    install(FILES ${CMAKE_CURRENT_BINARY_DIR}/etc/profile.d/mamba.sh DESTINATION /etc/profile.d RENAME mamba.sh.disabled)
 endif()
 
 install(
